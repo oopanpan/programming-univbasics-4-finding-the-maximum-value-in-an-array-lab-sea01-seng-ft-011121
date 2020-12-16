@@ -4,13 +4,15 @@
 #end
 
 def find_max_value(array)
-  max_value = 0
-  array.length.times {|i|
-    if array[i] < array[i+1]
-      max_value = array[i+1]
+  ans = 0
+  count = 0
+  while count < array.length do
+    if array[count] < array[count + 1]
+      ans = array[count + 1]
+    else ans = array[count]
     end
-  }
-  max_value
+  count +1
+  end
 end
 
 hill = [1,2,3,4,5,4,3,2,1]
