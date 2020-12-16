@@ -11,7 +11,7 @@ def find_max_value(array)
       ans = array[count + 1]
     else ans = array[count]
     end
-  count +1
+  count += 1
   end
   ans
 end
