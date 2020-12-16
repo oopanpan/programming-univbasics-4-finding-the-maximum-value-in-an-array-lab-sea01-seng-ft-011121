@@ -5,16 +5,11 @@ require 'pry'
 #end
 
 def find_max_value(array)
-  ans = 0
-  count = 0
-  while count < array.length do
-    if ans < array[count]
-      ans = array[count]
+  ans = -1
+  array.length.times{|i|
+    if array[i]>ans
+      ans = array[i]
     end
-  count += 1
-  end
+  }
   ans
 end
-
-hill = [1,2,3,4,5,4,3,2,1]
-find_max_value(hill)
