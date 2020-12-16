@@ -13,6 +13,7 @@ def find_max_value(array)
     end
   count +1
   end
+  ans
 end
 
 hill = [1,2,3,4,5,4,3,2,1]
