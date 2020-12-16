@@ -1,3 +1,4 @@
+require 'pry'
 #def find_max_value(array)
 #  new_array = array.sort
 #  new_array[-1]
@@ -9,6 +10,7 @@ def find_max_value(array)
   while count < array.length do
     if array[count] < array[count+1]
       ans = array[count + 1]
+      binding.pry
     else ans = array[count]
     end
   count += 1
