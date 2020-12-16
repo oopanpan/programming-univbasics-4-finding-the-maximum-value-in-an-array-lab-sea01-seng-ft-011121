@@ -10,8 +10,6 @@ def find_max_value(array)
   while count < array.length do
     if array[count +1] > array[count]
       ans = array[count + 1]
-      binding.pry
-    else ans = array[count]
     end
   count += 1
   end
