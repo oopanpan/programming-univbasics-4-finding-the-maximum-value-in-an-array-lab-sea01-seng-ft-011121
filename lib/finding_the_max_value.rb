@@ -8,8 +8,8 @@ def find_max_value(array)
   ans = 0
   count = 0
   while count < array.length do
-    if array[count +1] > array[count]
-      ans = array[count + 1]
+    if ans < array[count]
+      ans = array[count]
     end
   count += 1
   end
