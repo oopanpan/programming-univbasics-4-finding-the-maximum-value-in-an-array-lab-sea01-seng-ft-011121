@@ -7,7 +7,7 @@ def find_max_value(array)
   ans = 0
   count = 0
   while count < array.length do
-    if array[count] < array[count + 1]
+    if array[count] < array[count+1]
       ans = array[count + 1]
     else ans = array[count]
     end
